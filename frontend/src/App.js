@@ -1,11 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import Header from './Header';
 function App() {
+  const[counter, setCounter] = useState(0);
+
+
+  function increment(){
+    setCounter(counter + 1);
+  }
+
   return (
-    <Header>
-      Semana3
-    </Header>
+    <div>
+      <Header>Contador: {counter}</Header>
+      <button onClick={increment}>Adicionar</button>
+    </div>
   );
 }
 
