@@ -13,7 +13,7 @@ routes.post('/ongs', OngController.create);
 
 routes.get('/profile', ProfileController.index);
 
-routes.get('/session', SessionController.create);
+routes.post('/session', SessionController.create);
 
 routes.get('/incidents', IncidentController.index);
 routes.post('/incidents', IncidentController.create);

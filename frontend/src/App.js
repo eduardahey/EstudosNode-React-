@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './global.css';
-import Logon from './pages/Logon';
+import Router from './routes';
 
 function App() {
 
   return (
-    <Logon/>
+    <Router/>
   );
 }
 
